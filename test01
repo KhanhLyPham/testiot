@@ -1,1 +1,30 @@
-#include<>
+#include<>a = int(input("Nhập số nguyên thứ nhất: "))
+b = int(input("Nhập số nguyên thứ hai: "))
+c = int(input("Nhập số nguyên thứ ba: "))
+d = int(input("Nhập số nguyên thứ tư: "))
+
+# Giả sử a là số lớn nhất
+so_lon_thu_hai = a
+
+if b > so_lon_thu_hai:
+    so_lon_thu_hai = b
+
+if c > so_lon_thu_hai:
+    so_lon_thu_hai = c
+
+if d > so_lon_thu_hai:
+    so_lon_thu_hai = d
+
+# Giả sử số lớn thứ hai là b ban đầu
+so_lon_thu_ba = b
+
+if a > so_lon_thu_ba and a < so_lon_thu_hai:
+    so_lon_thu_ba = a
+
+if c > so_lon_thu_ba and c < so_lon_thu_hai:
+    so_lon_thu_ba = c
+
+if d > so_lon_thu_ba and d < so_lon_thu_hai:
+    so_lon_thu_ba = d
+
+print("Số lớn thứ hai là:", so_lon_thu_ba)
